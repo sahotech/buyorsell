@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "963678496618",
+    "project_id": "buy-or-sell-c810e",
+    "storage_bucket": "buy-or-sell-c810e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963678496618:android:65e22534d17ce8567be713",
+        "android_client_info": {
+          "package_name": "com.sahotech.buy_or_sell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963678496618-314v7i1lt8j2hveo31guielcrop8grno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGzCbb0dnZC7Jwz8GsM-7NSr6yBcAc1BU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963678496618-314v7i1lt8j2hveo31guielcrop8grno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
