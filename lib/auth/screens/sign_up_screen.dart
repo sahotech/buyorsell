@@ -2,13 +2,14 @@
 
 import 'package:buy_or_sell/auth/screens/sign_in_screen.dart';
 
-import 'package:buy_or_sell/widgets/utils/utils.dart';
 import 'package:flutter/material.dart';
 
+import '../../pages/main_page.dart';
 import '../../widgets/text_field/email_textform.dart';
 import '../../widgets/text_field/name_text.dart';
 import '../../widgets/text_field/password_text.dart';
 import '../../widgets/text_field/phone_text_field.dart';
+import '../../widgets/utils/utils.dart';
 import 'auth_service.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -108,6 +109,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         });
 
                         if (message!.contains('Success')) {
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(
+                              builder: (context) => const MainScreen(),
+                            ),
+                          );
                           setState(() {
                             isLoading = false;
                             emailController.clear();

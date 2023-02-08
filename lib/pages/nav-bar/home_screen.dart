@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 import '../../widgets/categorie_widget.dart';
 import '../../widgets/utils/banner_ads_widget.dart';
-import '../../widgets/utils/utils.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

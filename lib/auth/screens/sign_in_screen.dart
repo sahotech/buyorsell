@@ -2,11 +2,13 @@
 
 import 'package:buy_or_sell/auth/screens/auth_service.dart';
 import 'package:buy_or_sell/auth/screens/sign_up_screen.dart';
+import 'package:buy_or_sell/pages/main_page.dart';
 
 import 'package:flutter/material.dart';
 
 import '../../widgets/text_field/email_textform.dart';
 import '../../widgets/text_field/password_text.dart';
+
 import '../../widgets/utils/utils.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -122,7 +124,13 @@ class _SignInScreenState extends State<SignInScreen> {
                           isLoading = false;
                         });
 
-                        if (message!.contains('Success')) {}
+                        if (message!.contains('Success')) {
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(
+                              builder: (context) => const MainScreen(),
+                            ),
+                          );
+                        }
                         Utils().mySnackbar(
                             context: context,
                             message: message,
